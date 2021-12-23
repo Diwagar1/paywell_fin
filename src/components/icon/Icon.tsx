@@ -8,8 +8,8 @@ export interface IconProps {
   children: string;
   transform?: string;
   variant?: "small" | "medium" | "large";
-  color?: colorOptions;
-  defaultcolor?: "currentColor" | "auto";
+  color?: string;
+  defaultcolor?: "white" | "auto";
 }
 
 const Icon: React.FC<
@@ -20,13 +20,14 @@ const Icon: React.FC<
       src={`/assets/images/icons/${children}.svg`}
       fallback={() => <span>{children?.trim()}</span>}
       {...props}
+      style={{color:props.color}}
     />
   );
 };
 
 Icon.defaultProps = {
   variant: "medium",
-  defaultcolor: "currentColor",
+  defaultcolor: "white",
 };
 
 export default Icon;

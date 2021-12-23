@@ -5,7 +5,7 @@ import AppLayout from "./AppLayout";
 
 const NavbarLayout: React.FC = ({ children }) => {
   return (
-    <AppLayout navbar={<Navbar />}>
+    <AppLayout >
       <Container my="2rem">{children}</Container>
     </AppLayout>
   );

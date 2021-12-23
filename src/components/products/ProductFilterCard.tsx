@@ -73,7 +73,8 @@ const ProductFilterCard = () => {
           key={item}
           name={item}
           value={item}
-          color="secondary"
+          color="primary"
+          style={{borderRadius:"20px"}}
           label={<SemiSpan color="inherit">{item}</SemiSpan>}
           my="10px"
           onChange={(e) => {
@@ -89,7 +90,8 @@ const ProductFilterCard = () => {
           key={item}
           name={item}
           value={item}
-          color="secondary"
+          color="primary"
+          style={{borderRadius:"20px"}}
           label={<SemiSpan color="inherit">{item}</SemiSpan>}
           my="10px"
           onChange={(e) => {
@@ -105,7 +107,8 @@ const ProductFilterCard = () => {
         <CheckBox
           key={item}
           value={item}
-          color="secondary"
+          color="primary"
+          style={{borderRadius:"20px"}}
           label={<Rating value={item} outof={5} color="warn" />}
           my="10px"
           onChange={(e) => {
@@ -116,12 +119,12 @@ const ProductFilterCard = () => {
 
       <Divider my="24px" />
 
-      <H6 mb="16px">Colors</H6>
-      <FlexBox mb="1rem">
+      <H6 mb="16px">player</H6>
+      {/* <FlexBox mb="1rem">
         {colorList.map((item) => (
           <Avatar bg={item} size={25} mr="10px" style={{ cursor: "pointer" }} />
         ))}
-      </FlexBox>
+      </FlexBox> */}
     </Card>
   );
 };

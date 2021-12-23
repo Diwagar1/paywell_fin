@@ -28,7 +28,7 @@ export interface ProductCard1Props extends CardProps {
   width:number;
   refer:string;
   Products:string;
-  color:string;
+  colors:string;
   // className?: string;
   // style?: CSSProperties;
   // imgUrl: string;
@@ -54,7 +54,7 @@ const ProductCard1: React.FC<ProductCard1Props> = ({
   width,
   refer,
   Products,
-  color,
+  colors,
   ...props
 }) => {
   const [open, setOpen] = useState(false);
@@ -83,10 +83,10 @@ const ProductCard1: React.FC<ProductCard1Props> = ({
   );
 
   return (
-    <StyledProductCard1 {...props} style={{borderTop:`2.8px solid ${color} `,}}>
+    <StyledProductCard1 {...props} style={{borderTop:`4px solid ${colors} `,}}>
       <div className="image-holder">
 
-        <Link href={`/product/${id}`}>
+        <Link href={`/shop/${id}`}>
           <a>
             <Image
               src={imgUrl}
@@ -102,7 +102,7 @@ const ProductCard1: React.FC<ProductCard1Props> = ({
       <div className="details">
         <FlexBox>
           <Box flex="1 1 0" minWidth="0px" mr="0.5rem">
-            <Link href={`/product/${id}`}>
+            <Link href={`/shop/${id}`}>
               <a>
                 <H3
                   className="title"
@@ -120,7 +120,7 @@ const ProductCard1: React.FC<ProductCard1Props> = ({
 
 
             <FlexBox alignItems="center" mt="10px">
-            <Link href={`/product/${id}`}>
+            <Link href={`/shop/${id}`}>
               <a>
                 <H3
                   className="title"
@@ -137,14 +137,14 @@ const ProductCard1: React.FC<ProductCard1Props> = ({
             </Link>
             </FlexBox>
             <FlexBox alignItems="center" mt="10px">
-            <Link href={`/product/${id}`}>
+            <Link href={`/shop/${id}`}>
               <a>
                 <H3
                   className="title"
                   fontSize="14px"
                   textAlign="left"
                   fontWeight="600"
-                  color={color}
+                  color={colors}
                   mb="10px"
                   Products={Products}
                 >
@@ -164,14 +164,14 @@ const ProductCard1: React.FC<ProductCard1Props> = ({
             {/* <div className="add-cart"> */}
             <Button
               variant="outlined"
-              // color=''
+              color={colors}
               size="25px"
-              borderColor="primary"
+              borderColor={colors}
               padding='3px'
               marginBottom='10px'
               borderRadius="30px"
             >
-              <Icon variant="small" color="primary">arrow-right</Icon>
+              <Icon variant="small" color="white">arrow-right</Icon>
             </Button>
 
            

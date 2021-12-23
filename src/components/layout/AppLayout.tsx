@@ -37,7 +37,11 @@ const AppLayout: React.FC<Props> = ({
       children
     )}
 
+   <Sticky fixedOn={0}>
     <MobileNavigationBar />
+      
+    </Sticky>
+
     {/* <Footer /> */}
   </StyledAppLayout>
 );

@@ -76,27 +76,27 @@ const Button = styled.button<
         },
         outlined: {
           padding: "10px 16px",
-          color: `${color}.main`,
+          color: `${color}`,
           border: "1px solid",
-          borderColor: color ? `${color}.main` : "text.disabled",
+          borderColor: color ? `${color}` : "text.disabled",
 
           "&:enabled svg path": {
             fill: color
-              ? `${theme.colors[color]?.main} !important`
+              ? `${theme.colors[color]} !important`
               : "text.primary",
           },
           "&:enabled svg polyline, svg polygon": {
             color: color
-              ? `${theme.colors[color]?.main} !important`
+              ? `${theme.colors[color]} !important`
               : "text.primary",
           },
           "&:focus": {
             boxShadow: `0px 1px 4px 0px ${theme.colors[color]?.light}`,
           },
           "&:hover:enabled": {
-            bg: color && `${color}.main`,
-            borderColor: color && `${color}.main`,
-            color: color && `${color}.text`,
+            bg: color && `${color}`,
+            borderColor: color && `${color}`,
+            color: color && `${color}`,
             "svg path": {
               fill: color
                 ? `${theme.colors[color]?.text} !important`

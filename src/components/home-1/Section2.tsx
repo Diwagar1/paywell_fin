@@ -44,7 +44,7 @@ const Section2: React.FC = () => {
                 responsive="fixed"
                 height={150}
                 width={150}
-                color={item.color}
+                colors={item.color}
               />
             </Box>
           ))}

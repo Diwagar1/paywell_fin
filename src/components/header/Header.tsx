@@ -104,8 +104,8 @@ const Header: React.FC<HeaderProps> = ({ isFixed, className }) => {
             <div style={{display:"flex",flex:1,flexDirection:"row",justifyContent:"center",alignItems:"center",}}>
               {route.map((routes)=>{
                  return (
-                  <Link href={routes.to} >
-                      <Typography style={{marginLeft:"30px",fontSize:"15px",fontWeight:"700"}}>{routes.pathName}</Typography>
+                  <Link href={routes.to}  >
+                      <Typography style={{marginLeft:"30px",fontSize:"18px",fontWeight:"700",cursor:"pointer"}}>{routes.pathName}</Typography>
                   </Link>
                  )
               })}

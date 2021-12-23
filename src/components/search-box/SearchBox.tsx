@@ -45,7 +45,7 @@ const SearchBox: React.FC<SearchBoxProps> = () => {
   }, []);
 
   return (
-    <Box position="relative" flex="1 1 0" maxWidth="670px" mx="auto">
+    <Box position="relative" flex="1 1 0" maxWidth="75%" mx="auto">
       <StyledSearchBox>
         <Icon className="search-icon" size="18px">
           search
@@ -100,7 +100,7 @@ const SearchBox: React.FC<SearchBoxProps> = () => {
 };
 
 const categories = [
-  "All Categories",
+  "s",
   "Car",
   "Clothes",
   "Electronics",

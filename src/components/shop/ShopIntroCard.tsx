@@ -16,7 +16,7 @@ const ShopIntroCard: React.FC<ShopIntroCardProps> = () => {
 <ShopIntroWrapper>
        <Container className="container" mb="20px">
          <div className="ShopHeader_nav starts">
-           <img src="/assets/images/products/new/Books.svg" width="80%" height="300px" className="content"></img>
+           <img src="/assets/images/products/new/Phone.svg" width="80%" height="290px" className="content"></img>
            <ul className="Rightpage">
              <li >Animation</li>
              <li> Boost your workflow with programs and plugins and presets</li>

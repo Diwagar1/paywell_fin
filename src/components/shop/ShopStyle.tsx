@@ -14,6 +14,7 @@ export const ShopIntroWrapper = styled(Card)`
     grid-template-columns: auto 58.3333333333%;
     justify-content: center;
     padding-left:0px;
+    height:300px
  }
  
 .Rightpage{
@@ -29,7 +30,7 @@ ul li:nth-child(1) {
   color:blue;
 }
 ul li:nth-child(2) {
-  font-size:45px;
+  font-size:35px;
   font-weight:bold;
   line-height:50px;
 }

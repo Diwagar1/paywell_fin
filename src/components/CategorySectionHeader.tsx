@@ -28,7 +28,7 @@ const CategorySectionHeader: React.FC<CategorySectionHeaderProps> = ({
         </H2>
       </FlexBox>
 
-      {seeMoreLink && (
+      {/* {seeMoreLink && (
         <Link href={seeMoreLink}>
           <a>
             <FlexBox alignItems="center" ml="0.5rem" color="text.muted">
@@ -39,7 +39,7 @@ const CategorySectionHeader: React.FC<CategorySectionHeaderProps> = ({
             </FlexBox>
           </a>
         </Link>
-      )}
+      )} */}
     </FlexBox>
   );
 };
